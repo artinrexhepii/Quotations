@@ -26,6 +26,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "bloc",
+      "rootUri": "file:///Users/artinrexhepi/.pub-cache/hosted/pub.dev/bloc-8.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "boolean_selector",
       "rootUri": "file:///Users/artinrexhepi/.pub-cache/hosted/pub.dev/boolean_selector-2.1.1",
       "packageUri": "lib/",
@@ -170,6 +176,12 @@
       "languageVersion": "3.3"
     },
     {
+      "name": "flutter_bloc",
+      "rootUri": "file:///Users/artinrexhepi/.pub-cache/hosted/pub.dev/flutter_bloc-8.1.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_lints",
       "rootUri": "file:///Users/artinrexhepi/.pub-cache/hosted/pub.dev/flutter_lints-3.0.2",
       "packageUri": "lib/",
@@ -308,6 +320,12 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "nested",
+      "rootUri": "file:///Users/artinrexhepi/.pub-cache/hosted/pub.dev/nested-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "package_config",
       "rootUri": "file:///Users/artinrexhepi/.pub-cache/hosted/pub.dev/package_config-2.1.1",
       "packageUri": "lib/",
@@ -370,6 +388,12 @@
     {
       "name": "pool",
       "rootUri": "file:///Users/artinrexhepi/.pub-cache/hosted/pub.dev/pool-1.5.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "provider",
+      "rootUri": "file:///Users/artinrexhepi/.pub-cache/hosted/pub.dev/provider-6.1.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -524,7 +548,7 @@
       "languageVersion": "3.4"
     }
   ],
-  "generated": "2025-01-15T18:02:42.677021Z",
+  "generated": "2025-01-15T20:14:32.697867Z",
   "generator": "pub",
   "generatorVersion": "3.4.3",
   "flutterRoot": "file:///Users/artinrexhepi/development/flutter",
