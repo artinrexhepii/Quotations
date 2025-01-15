@@ -1,0 +1,1 @@
+ /Users/artinrexhepi/Documents/GitHub/Quotations/.dart_tool/flutter_build/2c09057cf46139c32ff5379faaf13557/native_assets.yaml: 
