@@ -106,7 +106,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(
             seedColor: AppColors.primary,
-            background: AppColors.background,
+            surface: AppColors.background,
           ),
           scaffoldBackgroundColor: AppColors.background,
           cardTheme: CardTheme(
