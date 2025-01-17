@@ -10,6 +10,7 @@ import '../../domain/entities/quotation.dart';
 import '../bloc/quotation_bloc.dart';
 import '../widgets/line_item_list.dart';
 import '../widgets/quotation_form.dart';
+import 'dart:io';
 
 class CreateQuotationScreen extends StatefulWidget {
   final Quotation? editQuotation;
@@ -177,8 +178,8 @@ class _CreateQuotationScreenState extends State<CreateQuotationScreen> {
                       padding: const EdgeInsets.only(right: AppDimensions.paddingS),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                        child: Image.network(
-                          _imageUrls[index],
+                        child: Image.file(
+                          File(_imageUrls[index]),
                           height: 120,
                           width: 120,
                           fit: BoxFit.cover,

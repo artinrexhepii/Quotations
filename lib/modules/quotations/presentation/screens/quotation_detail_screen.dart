@@ -5,6 +5,7 @@ import '../../../../core/utils/formatters.dart';
 import '../../domain/entities/quotation.dart';
 import '../bloc/quotation_bloc.dart';
 import 'create_quotation_screen.dart';
+import 'dart:io';
 
 class QuotationDetailScreen extends StatelessWidget {
   final Quotation quotation;
@@ -196,12 +197,7 @@ class QuotationDetailScreen extends StatelessWidget {
                 padding: const EdgeInsets.only(right: AppDimensions.paddingS),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                  child: Image.network(
-                    quotation.imageUrls[index],
-                    height: 120,
-                    width: 120,
-                    fit: BoxFit.cover,
-                  ),
+                  child: _buildImage(quotation.imageUrls[index]),
                 ),
               );
             },
@@ -209,6 +205,24 @@ class QuotationDetailScreen extends StatelessWidget {
         ),
       ],
     );
+  }
+
+  Widget _buildImage(String path) {
+    if (path.startsWith('http://') || path.startsWith('https://')) {
+      return Image.network(
+        path,
+        height: 120,
+        width: 120,
+        fit: BoxFit.cover,
+      );
+    } else {
+      return Image.file(
+        File(path),
+        height: 120,
+        width: 120,
+        fit: BoxFit.cover,
+      );
+    }
   }
 
   Widget _buildTotalPrice() {
