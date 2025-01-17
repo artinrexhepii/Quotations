@@ -1,16 +1,36 @@
-# quotations_app
+# Quotations App
 
-A new Flutter project.
+A Flutter application implementing a quotation management system with a focus on clean architecture and modern development practices.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Create, read, update, and delete quotations
+- Local storage using Hive database
+- BLoC pattern for state management
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Architecture
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The application is built using Clean Architecture with the following layers:
+
+- **Domain Layer**: Contains business logic and entities
+- **Data Layer**: Implements repositories and handles data sources
+- **Presentation Layer**: Handles UI and state management
+
+### Core Module
+The core module contains application-wide functionality:
+- `error/`: Error handling and exceptions
+  - `exceptions.dart`: Custom exception definitions
+  - `failures.dart`: Failure cases for error handling
+- `routing/`: Navigation and routing
+  - `app_router.dart`: Application routing configuration
+- `utils/`: Shared utilities
+  - `constants.dart`: Application constants and configurations
+  - `formatters.dart`: Data formatting utilities
+  - `validators.dart`: Form validation logic
+
+
+
+## Screenshots
+Images showcasing the app's interface and functionality can be found in the `showcase_images` folder. 
+
